@@ -1,0 +1,278 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     overflow-x: hidden;
+ }
+
+
+ body {
+     background-image: url(/Img/Fondo_hotel.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: grid;
+     display: inline;
+ }
+
+ body:before {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     content: "";
+     background: #000;
+     opacity: 0.5;
+     z-index: 0;
+ }
+
+ /*  Sección del Nav */
+
+ .navbar_header {
+     height: 3.125em;
+     width: 100%;
+     padding: 0 3.125em;
+     border-bottom: solid 0.125em white;
+     position: fixed;
+     top: 1.25em;
+ }
+
+ .navbar_header .nav {
+     height: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .navbar_header .nav a {
+     text-decoration: none;
+     color: #FFFFFF;
+     font-size: 1.25em;
+ }
+
+ .navbar_header .nav a .nav-logo {
+     height: fit-content;
+     width: fit-content;
+ }
+
+
+ .navbar_header .navbar_containerts-links a {
+     text-decoration: none;
+     color: #FFFFFF;
+     font-size: 1.25em;
+ }
+
+
+ /* Sección flotante */
+
+ #cuerpo {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+ }
+
+
+ /* Seccion de Imagenes */
+
+ .seccion_recuadros {
+     height: 100%;
+     width: 100%;
+     display: grid;
+     margin-top: 25%;
+     margin-left: 12%;
+ }
+
+ .lista_imagenes {
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     overflow: hidden;
+     gap: 0.9375em;
+ }
+
+ .imagenes {
+     grid-column: span 4;
+     overflow: hidden;
+     position: relative;
+ }
+
+ .imagenes_activa {
+     grid-column: span 3;
+     overflow: hidden;
+     position: relative;
+ }
+
+ .imagenes_activa img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .imagenes img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+
+ /* Sección texto de imagenes */
+
+ .imagenes .texto_secundario {
+     position: absolute;
+     color: #FFFFFF;
+     z-index: 2;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     transition: 0.7s;
+ }
+
+ .imagenes .texto_secundario .principal {
+     font-size: 30px;
+     font-weight: 200;
+ }
+
+ .imagenes .texto_secundario .secundario {
+     font-size: 19px;
+     font-weight: 100;
+     color: yellow;
+ }
+
+ .imagenes .secundario_2 {
+     display: none;
+ }
+
+ .imagenes:hover .secundario_2 {
+     background-color: rgba(236, 245, 243, 0.904);
+     color: brown;
+     font-size: 14px;
+     font-weight: 50;
+     display: grid;
+     text-align: center;
+ }
+
+ .container_tarifas {
+     display: grid;
+     font-weight: bold;
+     grid-template-columns: 1fr 1fr;
+ }
+
+ .left {
+     font-weight: lighter;
+     font-style: italic;
+ }
+
+ .price {
+     font-weight: bold;
+     color: #000;
+ }
+
+ .position {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+ }
+
+ .imagenes:hover .principal {
+     display: none;
+ }
+
+ .imagenes:hover .secundario {
+     display: none;
+ }
+
+ /* Sección texto Animado de la primera imagen */
+
+ .imagenes_activa .texto_secundario_activa {
+     position: absolute;
+     color: #FFFFFF;
+     z-index: 2;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     transition: 0.7s;
+ }
+
+ .imagenes_activa .texto_secundario_activa .principal {
+     font-size: 30px;
+     font-weight: 300;
+ }
+
+ .imagenes_activa .texto_secundario_activa .secundario {
+     font-size: 19px;
+     font-weight: 200;
+     color: yellow;
+ }
+
+ .imagenes_activa .secundario_2 {
+     display: none;
+ }
+
+ .imagenes_activa:hover .secundario_2 {
+     background-color: rgba(236, 245, 243, 0.904);
+     color: brown;
+     font-size: 14px;
+     font-weight: 50;
+     display: grid;
+     text-align: center;
+ }
+
+ .imagenes_activa:hover .principal {
+     display: none;
+ }
+
+ .imagenes_activa:hover .secundario {
+     display: none;
+ }
+
+
+ /* Sección de Registro del cliente */
+
+ #seccion_registro {
+     padding: 5px 10px;
+     bottom: -40%;
+     left: 10%;
+     width: 60%;
+     height: 140%;
+     display: grid;
+     gap: 0.5em;
+     position: relative;
+     background-color: rgba(220, 240, 235, 0.6);
+ }
+
+ #seccion_registro p {
+     background-color: #FFFFFF;
+     text-align: center;
+     font-size: 30px;
+     place-content: center;
+     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+ }
+
+ .lista_items {
+     display: grid;
+     gap: 5px;
+ }
+
+ .lista_items button {
+     margin-left: 125px;
+     width: min-content;
+     border-radius: 100px;
+     padding: 0.375em 3em;
+ }
+
+
+ /* Sección de respuesta de la consulta */
+
+ #results {
+     bottom: 1%;
+     display: grid;
+     gap: 0.5em;
+     position: relative;
+     background-color: rgba(220, 240, 235, 0.6);
+ }
+
+ #results p {
+     color: coral;
+     font-size: 20px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }

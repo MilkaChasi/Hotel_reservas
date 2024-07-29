@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel_resevaciones</title>
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/queris.css">
+    <link rel="stylesheet" href="../CSS/styleLogin.css">
+</head>
+
+<body>
+    <header class="navbar_header">
+        <nav class="nav">
+            <a href="../HTML/index.html">
+                <img src="../IMG/logo_hotel.png" alt="logo_hotel" class="nav-logo">
+            </a>
+
+            <div class="navbar_containerts-links">
+                <div class="login">
+                    <a href="../HTML/login.html">LOG IN</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="cuerpo">
+
+        <div class="seccion_recuadros">
+            <div class="lista_imagenes">
+                <div class="imagenes_activa">
+                    <img src="../IMG/Lakewood.jpg" alt="imagenes_activa">
+                    <div class="texto_secundario_activa">
+                        <p class="principal">Lakewood</p>
+                        <p class="secundario">★★★</p>
+                        <div class="secundario_2">
+                            Rates
+                            <div class="container_tarifas">
+                                <div class="dayOfWeek">
+                                    Day of Week
+                                    <div class="position">
+                                        <div class="left">
+                                            <div>
+                                                Regular
+                                            </div>
+                                            <div>
+                                                Reward
+                                            </div>
+                                        </div>
+
+                                        <div class="price">
+                                            <div>
+                                                $ 110
+                                            </div>
+                                            <div>
+                                                $ 80
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="isWeekend">
+                                    Weekend
+                                    <div class="price">
+                                        <div>$ 90</div>
+                                        <div>$ 80</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imagenes">
+                    <img src="../IMG/Bridgewood.jpg" alt="grupo2">
+                    <div class="texto_secundario">
+                        <p class="principal">Bridgewood</p>
+                        <p class="secundario">★★★★</p>
+                        <div class="secundario_2">
+                            Rates
+
+                            <div class="container_tarifas">
+                                <div class="dayOfWeek">
+                                    Day of Week
+
+                                    <div class="position">
+                                        <div class="left">
+                                            <div>
+                                                Regular
+                                            </div>
+                                            <div>
+                                                Reward
+                                            </div>
+                                        </div>
+
+                                        <div class="price">
+                                            <div>
+                                                $ 160
+                                            </div>
+                                            <div>
+                                                $ 110
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="isWeekend">
+                                    Weekend
+                                    <div class="price">
+                                        <div>$ 60</div>
+                                        <div>$ 50</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imagenes">
+                    <img src="../IMG/Ridgewood.jpg" alt="grupo3">
+                    <div class="texto_secundario">
+                        <p class="principal">Ridgewood</p>
+                        <p class="secundario">★★★★★</p>
+                        <div class="secundario_2">
+                            Rates
+                            <div class="container_tarifas">
+                                <div class="dayOfWeek">
+                                    Day of Week
+                                    <div class="position">
+                                        <div class="left">
+                                            <div>
+                                                Regular
+                                            </div>
+                                            <div>
+                                                Reward
+                                            </div>
+                                        </div>
+
+                                        <div class="price">
+                                            <div>
+                                                $ 220
+                                            </div>
+                                            <div>
+                                                $ 100
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="isWeekend">
+                                    Weekend
+                                    <div class="price">
+                                        <div>$ 150</div>
+                                        <div>$ 40</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="seccion_registro">
+            <p>
+                BOOK A ROOM
+            </p>
+            <div class="lista_items">
+                <label for="fechas">Date:</label>
+                <input type="text" multiple id="fechas" placeholder="16Mar2024, 17Mar2024">
+                <label for="tipoCliente">Type of customer:</label>
+                <select id="tipoCliente">
+                    <option value="Regular">Regular</option>
+                    <option value="Recompensas">Reward</option>
+                </select>
+                <button id="search">Search</button>
+            </div>
+
+            <div id="results">
+                <p id="results_p"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script defer src="../script.js"></script>
+
+</body>
+
+</html>

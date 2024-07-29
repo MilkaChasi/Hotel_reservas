@@ -1,0 +1,70 @@
+/* Página Login- Usuario*/
+body {
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgba(194, 158, 158, 0.377);
+
+}
+
+#login {
+    margin-left: 210px;
+    margin-right: 200px;
+    margin-top: 200px;
+
+    display: grid;
+    flex-direction: column;
+    place-content: center;
+    gap: 5px;
+
+    box-shadow: 9px 9px 16px rgba(8, 8, 26, 0.5);
+    border-radius: 15px;
+}
+
+/* Sección nombre del  usuario */
+
+#input-usuario {
+    position: relative;
+}
+
+.inputusername {
+    padding: 3px 15px;
+}
+
+#input-usuario i {
+    position: absolute;
+    right: 10%;
+    bottom: 8%;
+}
+
+/* Sección contraseña del  usuario */
+
+#input-contraseña {
+    position: relative;
+}
+
+#input-contraseña i {
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+}
+
+.texto-contraseña {
+    padding: 3px 15px;
+}
+
+/* Sección ingreso del  usuario */
+
+.boton-iniciar {
+    margin-top: 10px;
+    border-radius: 100px;
+    padding: 0.375em 3em;
+}
+
+#input-boton {
+    display: grid;
+    place-items: center;
+}
+
+#input-boton a {
+    text-decoration: none;
+}
